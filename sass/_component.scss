@@ -1,0 +1,43 @@
+.hero-buttons{
+    width: max-content;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+
+    @include respond(phone) {
+        flex-direction: column;
+        width: 80%;
+    }
+}
+
+.btn {
+    padding: 1.2rem 3rem;
+    margin: 1rem;
+    
+    color: #fff;
+    border-radius: 100px;
+    border-style: hidden;
+    font-style: inherit;
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 1.8rem;
+    
+    &-green{
+        background-color: hsl(171, 66%, 44%);
+
+        &:hover {
+            background-color: hsl(171, 66%, 50%);
+        }
+    }
+    &-blue{
+        background-color: hsl(233, 100%, 69%);
+
+        &:hover {
+            background-color: hsl(233, 100%, 80%);
+        }
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+}

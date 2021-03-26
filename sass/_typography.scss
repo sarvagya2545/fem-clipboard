@@ -1,0 +1,43 @@
+// TYPOGRAPHY
+.heading-primary {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+
+    @include respond(phone) {
+        font-size: 3.5rem;
+    }
+}
+
+.heading-secondary {
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+
+    @include respond(phone) {
+        font-size: 3rem;
+    }
+}
+
+.heading-tertiary {
+    font-size: 2.4rem;
+    margin-bottom: .5rem;
+    @include respond(phone) {
+        font-size: 2.4rem;
+    }
+}
+
+.type {
+    text-align: center;
+    margin: 0 auto;
+    width: 640px;
+
+    @include respond(tab-port) {
+        width: 80%;
+    }
+}
+
+.para{
+    color: #9fabb2;
+    font-size: 1.8rem;
+    margin-bottom: 4rem;
+    line-height: 1.8;
+}

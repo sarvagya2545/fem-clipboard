@@ -1,0 +1,22 @@
+// BASE
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.5;
+}
+
+body{
+    box-sizing: border-box;
+    font-family: 'Bai Jamjuree', sans-serif;
+
+    background-image: url('../images/bg-header-desktop.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}

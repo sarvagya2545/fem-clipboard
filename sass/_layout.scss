@@ -1,0 +1,239 @@
+header {
+    text-align: center;
+    padding: 13rem 0rem;
+    margin: 0 auto;
+    
+    .logo {
+        margin-bottom: 4rem;
+    }
+}
+
+#feature-1 .type {
+    margin-bottom: 8rem;
+}
+
+.feature-list-1 {
+    display: flex;
+
+    @include respond(tab-land) {
+        flex-direction: column;
+    }
+
+    .img-main-1 {
+        height: 57rem;
+        margin-left: -3rem;
+
+        @include respond(tab-land) {
+            margin: 0 auto;
+            height: 50rem;
+        }
+
+        @include respond(tab-port) {
+            height: 40rem;
+        }
+
+        @include respond(phone) {
+            height: auto;
+            width: 80%;
+        }
+    }
+
+    .list {
+        margin: 2rem 6rem 0;
+        padding: 4rem;
+        width: 30%;
+        min-width: 40rem;
+        list-style-type: none;
+
+        @include respond(tab-land) {
+            display: flex;
+            margin: 2rem auto 0;
+            width: 100%;
+        }
+
+        @include respond(phone) {
+            flex-direction: column;
+            margin: 0;
+        }
+
+        &-item {
+            @include respond(tab-land) {
+                margin: 0 2.5rem;
+                flex: 1;
+                text-align: center;
+            }
+        }
+
+        .para {
+            font-size: 1.6rem;
+            margin-bottom: 6rem;
+        }
+    }
+}
+
+#feature-2 {
+    text-align: center;
+    margin-top: 10rem;
+
+    .para {
+        margin: 0 auto;
+        width: 50%;
+    }
+
+    img {
+        margin-top: 10rem;
+
+        @include respond(tab-land) {
+            height: 50rem;
+        }
+
+        @include respond(tab-port) {
+            height: 35rem;
+        }
+
+        @include respond(phone) {
+            height: auto;
+            width: 80%;
+        }
+    }
+}
+
+#feature-3 {
+    text-align: center;
+    margin-top: 4rem;
+
+    .features {
+        display: flex;
+        padding: 5rem 12rem 10rem;
+
+        @include respond(tab-land) {
+            padding: 5rem;
+        }
+
+        @include respond(phone) {
+            flex-direction: column;
+        }
+    }
+
+    .feature {
+        margin: 0 2rem;
+        flex: 1;
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+
+        h3 {
+            margin: 4rem 0 2rem;
+        }
+
+        .para {
+            font-size: 1.6rem;
+        }
+    }
+}
+
+#feature-4 {
+    display: flex;
+    justify-content: space-around;
+    padding:  0 10rem;
+
+    @include respond(tab-land) {
+        padding: 0 5rem;   
+    }
+
+    @include respond(tab-port) {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+
+        .icon {
+            margin-top: 3rem;
+        }
+    }
+
+    @include respond(phone) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+#feature-5 {
+    margin: 10rem 0;
+    text-align: center;
+}
+
+.footer {
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    padding: 4rem;
+    justify-content: space-between;
+
+    @include respond(phone) {
+        flex-direction: column;
+    }
+
+    &-logo {
+        height: 5rem;
+    }
+
+    &-links {
+        // background-color: orangered;
+        list-style-type: none;
+
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: repeat(3, 20rem);
+        grid-auto-flow: row;
+
+        font-size: 1.8rem;
+        color: hsl(210, 10%, 33%);
+
+        @include respond(tab-port) {
+            grid-template-columns: repeat(3, minmax(10rem, 15rem));
+        }
+
+        @media (max-width: 750px) {
+            grid-template-columns: repeat(2, minmax(10rem, 15rem));
+        }
+
+        @include respond(phone) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 6rem 0;
+        }
+    }    
+
+    &-link {
+        margin: .5rem 0;
+
+        &:hover {
+            cursor: pointer;
+            color: hsl(171, 66%, 44%);
+        }
+    }
+
+    &-social {
+        // background-color: palegreen;
+
+        display: flex;
+        justify-content: flex-end;
+
+        &-logo {
+            height: 2rem;
+            margin: 0 1rem;
+
+            &:hover {
+                cursor: pointer;
+                filter: brightness(0) saturate(100%) invert(63%) sepia(23%) saturate(1213%) hue-rotate(122deg) brightness(92%) contrast(92%);
+            }
+
+            @include respond(phone) {
+                margin: 0 3rem;
+            }
+        }
+    }
+}
